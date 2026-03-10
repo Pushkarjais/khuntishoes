@@ -1,0 +1,21 @@
+/* ================= SCROLL ANIMATIONS ================= */
+
+.hero-title{
+
+animation:slideDown 1.5s;
+
+}
+
+@keyframes slideDown{
+
+from{
+transform:translateY(-100px);
+opacity:0;
+}
+
+to{
+transform:translateY(0);
+opacity:1;
+}
+
+}

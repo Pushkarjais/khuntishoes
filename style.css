@@ -1,0 +1,491 @@
+/* ================= GLOBAL STYLE ================= */
+
+body{
+margin:0;
+font-family:Arial, Helvetica, sans-serif;
+background:#111;
+color:white;
+transition:0.3s;
+}
+
+/* LIGHT MODE */
+
+.light{
+background:white;
+color:black;
+}
+
+/* ================= NAVBAR ================= */
+
+.navbar{
+
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px;
+background:black;
+position:sticky;
+top:0;
+z-index:1000;
+
+}
+
+/* LOGO */
+
+.logo{
+
+font-size:28px;
+font-weight:bold;
+
+}
+
+/* NAV LINKS */
+
+nav a{
+
+color:white;
+margin-left:20px;
+text-decoration:none;
+font-weight:bold;
+
+}
+
+nav a:hover{
+
+color:red;
+
+}
+
+/* SEARCH BAR */
+
+#searchInput{
+
+padding:8px;
+border-radius:5px;
+border:none;
+margin-left:20px;
+
+}
+
+/* ================= HERO SECTION ================= */
+
+.hero{
+
+height:80vh;
+
+background-image:url("images/background.jpg");
+
+background-size:cover;
+background-position:center;
+
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+
+text-align:center;
+
+}
+
+/* HERO TITLE */
+
+.hero-title{
+
+font-size:60px;
+letter-spacing:3px;
+
+}
+
+/* HERO BUTTON */
+
+.hero-btn{
+
+padding:15px 30px;
+background:red;
+border:none;
+color:white;
+font-size:18px;
+cursor:pointer;
+transition:0.3s;
+
+}
+
+.hero-btn:hover{
+
+transform:scale(1.1);
+
+}
+
+/* ================= SLIDER ================= */
+
+.slider{
+
+width:100%;
+overflow:hidden;
+height:400px;
+
+}
+
+.slides{
+
+display:flex;
+transition:1s;
+
+}
+
+.slide{
+
+min-width:100%;
+position:relative;
+
+}
+
+.slide img{
+
+width:100%;
+height:400px;
+object-fit:cover;
+
+}
+
+.slide h1{
+
+position:absolute;
+top:50%;
+left:50%;
+transform:translate(-50%,-50%);
+font-size:50px;
+color:white;
+
+}
+
+/* ================= PRODUCTS SECTION ================= */
+
+.products{
+
+background-image:url("images/background.jpg");
+
+background-size:cover;
+background-position:center;
+
+padding:60px;
+
+}
+
+/* PRODUCT GRID */
+
+.product-grid{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+
+gap:30px;
+
+padding:40px;
+
+}
+
+/* PRODUCT CARD */
+
+.product-card{
+
+background:#edd6d6;
+
+padding:20px;
+
+border-radius:10px;
+
+text-align:center;
+
+transition:0.3s;
+
+height:350px;
+
+}
+
+/* PRODUCT IMAGE FIX */
+
+.product-card img{
+
+width:100%;
+
+height:220px;
+
+object-fit:cover;
+
+border-radius:8px;
+
+}
+
+/* PRODUCT HOVER */
+
+.product-card:hover{
+
+transform:translateY(-10px);
+
+}
+
+/* IMAGE ZOOM */
+
+.product-card img:hover{
+
+transform:scale(1.08);
+transition:0.4s;
+
+}
+
+/* BUTTON */
+
+.product-card button{
+
+padding:10px 20px;
+background:red;
+border:none;
+color:rgb(230, 217, 217);
+cursor:pointer;
+margin-top:10px;
+
+}
+
+/* ================= TEAM SECTION ================= */
+
+.contact{
+
+background-image:url("images/background.jpg");
+
+background-size:cover;
+background-position:center;
+
+padding:80px;
+
+text-align:center;
+
+}
+
+/* TEAM GRID */
+
+.team-grid{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+
+gap:30px;
+
+padding:40px;
+
+}
+
+/* TEAM CARD */
+
+.team-card{
+
+background:#5c5857;
+
+padding:20px;
+
+border-radius:10px;
+
+text-align:center;
+
+transition:0.3s;
+
+}
+
+/* TEAM IMAGE */
+
+.team-card img{
+
+width:120px;
+height:120px;
+
+border-radius:50%;
+
+object-fit:cover;
+
+margin-bottom:10px;
+
+}
+
+/* TEAM HOVER */
+
+.team-card:hover{
+
+transform:translateY(-10px);
+
+}
+
+/* ================= CART ================= */
+
+.cart{
+
+font-size:20px;
+cursor:pointer;
+
+}
+
+/* CART PAGE */
+
+.cart-page{
+
+padding:50px;
+text-align:center;
+
+}
+clearcart{color: #9a0f0f;}
+
+/* ================= CHATBOT ================= */
+
+#chatbot{
+
+position:fixed;
+
+bottom:20px;
+right:20px;
+
+width:250px;
+
+background:#1c1c1c;
+
+border-radius:10px;
+
+overflow:hidden;
+
+}
+
+/* CHAT HEADER */
+
+#chat-header{
+
+background:red;
+
+padding:10px;
+
+font-weight:bold;
+
+}
+
+/* CHAT BODY */
+
+#chat-body{
+
+height:150px;
+
+overflow-y:auto;
+
+padding:10px;
+
+}
+
+/* CHAT INPUT */
+
+#chat-input{
+
+width:100%;
+
+padding:10px;
+
+border:none;
+
+}
+
+/* ================= FOOTER ================= */
+
+footer{
+
+background:black;
+
+text-align:center;
+
+padding:20px;
+
+margin-top:40px;
+
+}
+/* ================= DARK MODE HEADER FIX ================= */
+
+.light .navbar{
+
+background:white;
+
+}
+
+.light nav a{
+
+color:black;
+
+}
+
+.light .logo{
+
+color:black;
+
+}
+/* ================= CHATBOT ICON ================= */
+
+#chat-icon{
+
+position:fixed;
+
+bottom:20px;
+
+right:20px;
+
+background:red;
+
+width:60px;
+
+height:60px;
+
+border-radius:50%;
+
+display:flex;
+
+align-items:center;
+
+justify-content:center;
+
+font-size:30px;
+
+cursor:pointer;
+
+}
+
+
+/* CHAT WINDOW */
+
+#chatbot{
+
+position:fixed;
+
+bottom:90px;
+
+right:20px;
+
+width:260px;
+
+background:#1c1c1c;
+
+border-radius:10px;
+
+display:none;
+
+overflow:hidden;
+
+}
+/* ABOUT SECTION */
+
+.about{
+
+padding:60px;
+
+text-align:center;
+
+max-width:900px;
+
+margin:auto;
+
+line-height:1.6;
+
+}
