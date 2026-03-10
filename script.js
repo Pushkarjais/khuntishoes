@@ -132,3 +132,49 @@ document.body.classList.toggle("light");
 };
 
 }
+//--chatbot--
+/* ================= CHATBOT TOGGLE ================= */
+
+let chatIcon = document.getElementById("chat-icon");
+let chatBox = document.getElementById("chatbot");
+
+if(chatIcon){
+chatIcon.onclick = function(){
+
+if(chatBox.style.display === "block"){
+chatBox.style.display = "none";
+}
+else{
+chatBox.style.display = "block";
+}
+
+}
+}
+
+
+/* ================= CHATBOT MESSAGE ================= */
+
+let chatInput = document.getElementById("chat-input");
+let chatBody = document.getElementById("chat-body");
+
+if(chatInput){
+
+chatInput.addEventListener("keypress",function(e){
+
+if(e.key === "Enter"){
+
+let userText = chatInput.value;
+
+chatBody.innerHTML += "<p><b>You:</b> "+userText+"</p>";
+
+chatBody.innerHTML += "<p><b>Bot:</b> Please check our products section or contact us for more details.</p>";
+
+chatInput.value="";
+
+chatBody.scrollTop = chatBody.scrollHeight;
+
+}
+
+});
+
+}
