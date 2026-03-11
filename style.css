@@ -259,6 +259,9 @@ background-size:cover;
 background-position:center;
 
 padding:80px;
+  margin:auto;
+  width:100%;
+  max-width:1000px;
 
 text-align:center;
 
@@ -329,7 +332,9 @@ cursor:pointer;
 /* CART PAGE */
 
 .cart-page{
-
+width:100%;
+  max-width:900px;
+  margin:auto;
 padding:50px;
 text-align:center;
 
@@ -548,3 +553,6 @@ margin-top:10px;
 }
 
 }
+
+
+
